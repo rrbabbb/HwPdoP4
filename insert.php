@@ -28,7 +28,7 @@
 
         $query = 'INSERT INTO Producten (product_naam, prijs_per_stuk, omschrijving) VALUES (?, ?, ?)';
         $result = $conn->prepare($query);
-        $data = array($product_naam, $prijs_per_stuk, $omschrijving);
+        $data = [$product_naam, $prijs_per_stuk, $omschrijving];
         $result->execute($data);
     };    
 ?>
