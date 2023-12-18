@@ -1,5 +1,14 @@
 <?php
     include 'dbconn.php';
 
-    echo "<br> Connected to data base $database"
+
+    $query = 'SELECT * FROM producten';
+
+    $statement = $conn->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+
+
+    
 ?>
+<a href="delete.php?product_code=2">Link</a>
