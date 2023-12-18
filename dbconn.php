@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "root";
-    $database = "Winkel";
+    $database = "winkel";
 
     try 
     {
